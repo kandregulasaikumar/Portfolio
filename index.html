@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="sai.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="logo.jpg" alt="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>saikumar</span><br>from Visakhapatnam</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me.jpg" alt="Saikumar">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Passionate and highly motivated Front End Developer with a
+                        strong foundation in HTML, CSS, JavaScript, Bootstrap, React.js.
+                        Seeking an entry-level position to apply my skills and contribute to
+                        innovative web development projects. Committed to continuous
+                        learning and growth in the field of software development.</p>
+                    <div class="top-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Web Development</li>
+                            <li><span>CSS</span><br>Web Development</li>
+                            <li><span>Bootstrap</span><br>Web Development</li>
+                            <li><span>JavaScript</span><br>Web Development</li>
+                            <li><span>React.js</span><br>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2023</span><br>Bachelor's Degree in Commerce at MRS.A.V.N. COLLEGE, Visakhapatnam</li>
+                            <li><span>2018 - 2020</span><br>Intermediate (CEC Group) ZP OPEN SCHOOL, Visakhapatnam</li>
+                            <li><span>2018</span><br>SSC at K.D.P.M HIGH SCHOOL, Visakhapatnam</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Entri Elevate Full Stack Course</li>
+                            <li><span>July 2023 – August 2023</span><br>Internship - Uptree Front End Developer</li>
+                            <li><span>July 2023 – August 2023</span><br>Internship - Uptree Front End Developer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------PROJECTS------------ -->
+    <div id="projrcts">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>E-Commerce Website</h2>
+                    <p>I developed a feature-rich E-commerce website using React.js. The
+                        platform offers an intuitive user experience, enabling visitors to seamlessly
+                        browse and explore a wide range of products. Users can effortlessly view
+                        product details, add items to their shopping cart, and proceed to a hasslefree checkout process.
+                        Technologies : React.js, Javascript, HTML, CSS, Bootstrap</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Movie Search Website</h2>
+                    <p>I designed and built a movie search application using React.js. This app
+                        empowers users to easily search for movies, access detailed information
+                        about their favorite films, and discover new ones. It showcases my skills in
+                        React.js development, offering an engaging and user-friendly movie
+                        browsing experience.
+                        Technologies : React.js, Javascript, HTML, CSS, Bootstrap</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>TodoListApplication</h2>
+                    <p>developedaTodoListapplicationthatallowsuserstoadd,edit,anddelete theirtasks.Thisuser-friendlyappoffersaconvenientwaytomanage tod
+                        os.
+                        Technologies:Javascript,HTML,CSS,Bootstrap</p>
+                        <a href="#">learn more</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- <div id="contact">
+        <div id="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>contact@example.com</p>
+                    <p>0989767589</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"> </i></a>
+                        <a href=""><i class="fab fa-instagram"> </i></a>
+                        <a href=""><i class="fab fa-linkedin"> </i></a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name = "name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="massage"  rows="6" placeholder="Your Massage"></textarea>
+                            <button type="submit">Submit</button>
+
+                        </form> -->
+<!-- 
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> -->
+    
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
